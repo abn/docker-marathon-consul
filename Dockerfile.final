@@ -5,4 +5,6 @@ COPY ./rootfs /
 
 VOLUME ["/etc/ssl/certs"]
 
+EXPOSE 4000/tcp
+
 ENTRYPOINT ["/usr/bin/marathon-consul"]
